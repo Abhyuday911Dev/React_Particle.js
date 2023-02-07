@@ -1,0 +1,321 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../../public/Gilroy-Regular.ttf)format("truetype");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy, Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(15, 18, 21);
+    color: rgb(245, 243, 243);
+    scroll-behavior: smooth;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #242424;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #020405;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0e1011;
+}
+
+.slide {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    position: relative;
+}
+
+#slide1 {
+    padding-top: 60px;
+}
+
+#nav {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position: fixed;
+    z-index: 5;
+    top: 0%;
+    left: 0%;
+}
+
+#nleft {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.movieinput {
+    width: 20vw;
+    margin-right: 4%;
+    height: 32px;
+    background-color: #262626;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: rgb(250, 250, 250);
+    padding: 3px 16px;
+    padding-left: 13%;
+    background-image: url('../assets/search_Icon.png');
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: 5% 50%;
+}
+
+.navlogo {
+    height: 30px;
+    width: 140px;
+    object-fit: contain;
+}
+
+p {
+    margin: 0;
+    color: #fafafa;
+}
+
+h5 {
+    color: #888;
+}
+
+#maincontent {
+    width: 100%;
+    height: calc(100vh - 60px);
+    color: rgb(196, 196, 196);
+    padding: .8vw 2vw;
+    /* overflow: hidden; */
+}
+
+.simple {
+    width: 100%;
+    height: calc(100vh - 60px);
+    gap: 2.4vw;
+}
+
+#simpleL {
+    width: 45%;
+}
+
+#simpleR {
+    width: 100%;
+    padding: 1.6vw 0px 0px 10px;
+    height: calc(100vh - 60px - 1.6vw);
+
+    background: rgba(46, 43, 43, 0.25);
+    /* box-shadow: 0 8px 32px 0 rgba(57, 57, 57, 0.37); */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(32, 30, 30, 0.18);
+}
+
+#simpleR h1 {
+    height: calc(100vh - 60px - 70vh - 15px - 1.6vw);
+    display: flex;
+    align-items: center;
+}
+
+#simpleR img {
+    height: calc(70vh - 15px);
+    border-radius: 4px;
+    margin-bottom: 7px;
+    border: 6px solid #444;
+}
+
+ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+li {
+    white-space: nowrap;
+}
+
+.simple a {
+    color: #2a9ad2;
+    text-decoration: none;
+}
+
+.simple a:hover {
+    color: rgb(15, 109, 209);
+    text-decoration: none;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.activeNavLink {
+    color: rgb(10, 162, 196) !important;
+    scale: 1.1;
+}
+
+#nright a {
+    color: rgb(31, 121, 181);
+    display: flex;
+    gap: 4px;
+}
+
+#nright h5 {
+    margin: 0;
+}
+
+#maincontent i {
+    color: #2a9ad2;
+    font-size: 30px;
+}
+
+#pimg {
+    position: relative;
+}
+
+#yearp {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.539), transparent, transparent, transparent);
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    align-items: flex-end;
+    z-index: 6;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+#year {
+    font-size: 18px;
+    line-height: 18px;
+    color: #cdcdcd9c;
+}
+
+#movieDetails {
+    padding: 5px 0px 5px 22px;
+    margin: 0px 10px 0px 15px;
+    height: 39vh;
+    overflow: auto;
+    background-color: rgb(16, 17, 20);
+}
+
+/* ____________________Home page_____________________ */
+
+
+#title {
+    height: 40%;
+    width: 100%;
+    background-color: rgb(29, 29, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-bottom: 2.5%; */
+    position: relative;
+    overflow: hidden;
+}
+
+#title h1{
+    font-size: min(10vmax , 60px);
+    text-align: center;
+}
+
+#title h5{
+    font-size: 25px;
+}
+/* ________________________________tobe added to final____________________ */
+
+#tsparticles{
+    height: 150%;
+    width: 100%;
+    position: relative;
+}
+
+canvas{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+
+/* _________________swiper__________________ */
+
+.swiper-initialized{
+    height: calc(100% - 40% - 1.6vh);
+    /* background-color: #333; */
+    padding: 4px 0 0 0;
+    margin: 10px 0 0px 0;
+}
+
+.swiper-slide, swiper-slide {
+    background-color: rgb(86, 83, 83);
+}
+
+#swipertitle{
+    margin-top: 20px;
+}
+
+#holder{
+    height: calc(100% - 40% - 1.6vh);
+    /* background-color: #333; */
+    padding: 4px 0 0 0;
+    margin: 10px 0 0px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ____________________Home page_____________________ */
+
+/* slide2 */
